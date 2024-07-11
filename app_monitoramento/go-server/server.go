@@ -37,7 +37,7 @@ func main() {
 
         httpRequestsTotal.WithLabelValues(r.URL.Path).Inc()
 
-        w.Write([]byte("Hello, World!"))
+        w.Write([]byte("Teste OK!"))
     })
 
     http.Handle("/metrics", promhttp.Handler())
